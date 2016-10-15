@@ -8,29 +8,18 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
+/**
+ * Created by dzu on 15.10.2016.
+ */
 var core_1 = require('@angular/core');
-var platform_browser_1 = require('@angular/platform-browser');
-var forms_1 = require('@angular/forms');
-var app_component_1 = require('./app.component');
-var hero_detail_component_1 = require('./hero-detail.component');
-var AppModule = (function () {
-    function AppModule() {
+var HeroService = (function () {
+    function HeroService() {
     }
-    AppModule = __decorate([
-        core_1.NgModule({
-            imports: [
-                platform_browser_1.BrowserModule,
-                forms_1.FormsModule
-            ],
-            declarations: [
-                app_component_1.AppComponent,
-                hero_detail_component_1.HeroDetailComponent
-            ],
-            bootstrap: [app_component_1.AppComponent]
-        }), 
+    HeroService = __decorate([
+        core_1.Injectable(), 
         __metadata('design:paramtypes', [])
-    ], AppModule);
-    return AppModule;
+    ], HeroService);
+    return HeroService;
 }());
-exports.AppModule = AppModule;
-//# sourceMappingURL=app.module.js.map
+exports.HeroService = HeroService;
+//# sourceMappingURL=hero.service.js.map
